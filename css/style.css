@@ -78,7 +78,6 @@ header {
 }
 
 .carousel {
-    position: relative;
     width: 100%;
     height: 500px;
     overflow: hidden;
@@ -89,7 +88,6 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url('../assets/Снимок\ экрана\ \(28\).png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +95,18 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    z-index: 1; 
+}
+
+.carousel__item-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2; 
+    display: block;
 }
 
 .carousel__item-title {
