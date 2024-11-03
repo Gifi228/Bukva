@@ -8,13 +8,7 @@ window.addEventListener('load', () => {
     });
 });
 
-// const btn = document.querySelector('#button');
-// const menu = document.querySelector('#menu');
-
-// btn.addEventListener('click', () => {
-//     if (menu.classList.contains('disp') == true){
-//         menu.classList.remove('disp')
-//     } else {
-//         menu.classList.add('disp')
-//     }
-// })
+document.querySelector('.burger').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.header__nav').classList.toggle('open')
+})
